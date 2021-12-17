@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DC000000"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Start Recording"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stoprecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Stop Recording"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/startRecord"
+        app:layout_constraintStart_toStartOf="@+id/startRecord"
+        app:layout_constraintTop_toBottomOf="@+id/startRecord" />
+
+    <Button
+        android:id="@+id/startPlaying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Start Playing"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/stoprecord"
+        app:layout_constraintStart_toStartOf="@+id/stoprecord"
+        app:layout_constraintTop_toBottomOf="@+id/stoprecord" />
+
+    <Button
+        android:id="@+id/stopPlaying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Stop Playing"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/startPlaying"
+        app:layout_constraintStart_toStartOf="@+id/startPlaying"
+        app:layout_constraintTop_toBottomOf="@+id/startPlaying" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
